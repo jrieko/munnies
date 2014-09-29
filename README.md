@@ -1,0 +1,4 @@
+munnies
+=======
+
+Personal finances simulator
