@@ -9,4 +9,19 @@ import org.joda.money.Money;
  */
 public abstract class Debt {
 	private Money balance;
+	private Interest interest;
+
+	/**
+	 * @return TODO
+	 */
+	public Money getBalance() {
+		return balance;
+	}
+
+	/**
+	 * @return TODO
+	 */
+	public Interest getInterest() {
+		return interest;
+	}
 }

@@ -7,6 +7,20 @@ import java.math.BigDecimal;
  * 
  * @author rieko
  */
-public abstract class Interest {
-	public abstract BigDecimal getAPR();
+public class Interest {
+	private BigDecimal APR;
+
+	/**
+	 * @return TODO
+	 */
+	public BigDecimal getAPR() {
+		return APR;
+	}
+
+	/**
+	 * @return TODO
+	 */
+	public BigDecimal getMPR() {
+		return getAPR().divide(BigDecimal.valueOf(12));
+	}
 }
